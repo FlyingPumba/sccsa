@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{charter} % tipografia
+%\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{makeidx}
+\usepackage{float}
+\usepackage{amsmath, amsthm, amssymb}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Corolario}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+\usepackage{amsfonts}
+\usepackage{sectsty}
+\usepackage{charter}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{hyperref} % links
+\usepackage{algorithm} %http://www.ctan.org/pkg/algorithms
+\usepackage{algorithmic}
+\input{codesnippet}
+\input{page.layout}
+% \setcounter{secnumdepth}{2}
+\usepackage{underscore}
+\usepackage{caratula}
+\usepackage{url}
+\usepackage[usenames,dvipsnames]{xcolor}
+\lstset{
+    language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+    commentstyle=\color{ForestGreen}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#}
+}
+
+% *********************** %
+% Ejercicio 2 - Agregado
+% Grafos
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{graphs}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+% Otros
+\usepackage{arrayjobx}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{pgfplots}
+% *********************** %
+
+\begin{document}
+\thispagestyle{empty}
+\materia{Seminario sobre Computación, Ciencia y Sociedad en Argentina}
+\submateria{Primer Cuatrimestre de 2016}
+\titulo{Autonomía nacional y política científica\\ y tecnológica}
+\subtitulo{Gustavo F. Bayer}
+\integrante{Iv\'an Arcuschin}{678/13}{iarcuschin@gmail.com}
+\maketitle
+% no footer on the first page
+%\thispagestyle{empty}
+%\newpage
+%\tableofcontents
+
+\newpage
+\section*{Pregunta 1}
+\input{pregunta-1}
+
+\newpage
+\section*{Pregunta 2}
+\input{pregunta-2}
+
+\newpage
+\bibliographystyle{plain}
+\section{Referencias}
+\begingroup
+\renewcommand{\section}[2]{}
+\bibliography{informe}
+\endgroup
+
+%\newpage
+%\appendix
+%\input{apendiceC}
+
+\end{document}

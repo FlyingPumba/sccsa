@@ -1,0 +1,12 @@
+# Latex generated
+*.aux
+*.fdb_latexmk
+*.log
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+*~
+*.blg
+*.bbl
