@@ -16,7 +16,7 @@
 
 % *********************** %
 % Otros
-\usepackage{natbib}
+% \usepackage{natbib}
 \usepackage{enumitem}
 % \usepackage{multicol}
 % *********************** %
@@ -30,33 +30,35 @@
 \integrante{Iv\'an Arcuschin}{678/13}{iarcuschin@gmail.com}
 \maketitle
 % no footer on the first page
-%\thispagestyle{empty}
-%\newpage
-%\tableofcontents
+\thispagestyle{empty}
+\newpage
+\tableofcontents
 
 \newpage
-\section*{Repaso de la posición de Gustavo Bayer}
+\section{Repaso de la posición de Gustavo Bayer}
 \input{bayer}
 
 \newpage
-\section*{Pregunta 1}
+\section{Pregunta 1}
 \input{pregunta-1}
 
 \newpage
-\section*{Pregunta 2}
+\section{Pregunta 2}
 \input{pregunta-2}
 
 \newpage
-\section*{Conclusiones}
+\section{Conclusiones}
 \input{conclusiones}
 
 \newpage
-\bibliographystyle{plain}
 \section{Referencias}
-\begingroup
-\renewcommand{\section}[2]{}
-\bibliography{informe}
-\endgroup
+\input{referencias}
+% \bibliographystyle{plain}
+% \section{Referencias}
+% \begingroup
+% \renewcommand{\section}[2]{}
+% \bibliography{informe}
+% \endgroup
 
 %\newpage
 %\appendix
